@@ -1,0 +1,318 @@
+//write a program to check if the person is male female or others
+
+let gender = prompt("enter the gender name")
+
+if (gender==="male"){
+    console.log("the gender is male");
+}
+else if (gender==="female"){
+    console.log("the gender is female");
+}
+else if (gender==="other"|| gender==="others"   ){
+    console.log("the gender is others");
+}
+ else{
+    console.log("please enter a valid input")
+ }
+//wapt check whether std is distinction pass or fail
+
+let std =Number(prompt("enter the marks of std"))
+
+if (std>=80){
+    console.log("distintion");
+}
+else if (std>=70){
+    console.log("the std is first");
+}
+else if (std>=60){
+    console.log("the std is second");
+}
+else if(std>=35){
+    console.log("the std is pass");
+}
+else if(std<35){
+    console.log("the std is fail");
+}
+//wapt check whether the user is eligible to vote or note
+let vote = prompt("enter the age of user")
+
+if (vote>=18){
+    console.log("the user is eligible to vote");
+}
+else if (vote<18){
+    console.log("the user is not eligible to vote");
+}
+else if (vote<0){
+    console.log("please enter a valid age");
+
+}
+//wapt check user has given option of deposit withdrawal balance 
+let option = prompt("enter the option of user")
+
+if (option=="deposit"){
+    console.log("the user has selected deposit");
+}
+else if (option=="withdrawal"){
+    console.log("the user has selected withdrawal");
+}
+else if (option=="balance"){
+    console.log("the user has selected balance");
+}
+//wapt check gm gf gn ge based on current timing
+let time = prompt("enter the current time")
+
+if (time>=5 && time<12){
+    console.log("good morning");
+}
+else if (time>=12 && time<17){
+    console.log("good afternoon");
+}
+else if (time>=17 && time<21){
+    console.log("good evening");
+}
+else if (time>=21 && time<5){
+    console.log("good night");
+}
+//wapt check what day is today 
+
+let day = prompt("enter the day")
+
+if (day=="sunday"){
+    console.log("today is sunday");
+}
+else if (day=="monday"){
+    console.log("today is monday");
+}
+else if (day=="tuesday"){
+    console.log("today is tuesday");
+}
+else if (day=="wednesday"){
+    console.log("today is wednesday");
+}
+else if (day=="thursday"){
+    console.log("today is thursday");
+}
+else if (day=="friday"){
+    console.log("today is friday");
+}
+else if (day=="saturday"){
+    console.log("today is saturday");
+}
+//wapt check which month is this month
+let month = prompt("enter the month")
+
+if (month=="january"){
+    console.log("this month is january");
+}
+else if (month=="february"){
+    console.log("this month is february");
+}
+else if (month=="march"){
+    console.log("this month is march");
+}
+else if (month=="april"){
+    console.log("this month is april");
+}
+else if (month=="may"){
+    console.log("this month is may");
+}
+else if (month=="june"){
+    console.log("this month is june");
+}
+else if (month=="july"){
+    console.log("this month is july");
+}
+else if (month=="august"){
+    console.log("this month is august");
+}
+else if (month=="september"){
+    console.log("this month is september");
+}
+else if (month=="october"){
+    console.log("this month is october");
+}
+else if (month=="november"){
+    console.log("this month is november");
+}
+else if (month=="december"){
+    console.log("this month is december");
+}                       
+//largest of three numbers
+
+let num1 = Number(prompt("enter the first number"))
+let num2 = Number(prompt("enter the second number"))
+let num3 = Number(prompt("enter the third number"))
+
+if (num1>num2 && num1>num3){
+    console.log("the largest number is "+num1);
+}
+else if (num2>num1 && num2>num3){
+    console.log("the largest number is "+num2);
+}
+else if (num3>num1 && num3>num2){
+    console.log("the largest number is "+num3);
+}       
+//waptc the total amt after dis 
+
+let price = Number(prompt("enter the price of the item"))
+let discount = Number(prompt("enter the discount percentage"))
+
+let totalamt = price - (price*discount/100)
+
+console.log("the total amount after discount is "+totalamt);        
+
+
+//waptc whether the user is given input or not 
+let user = prompt("enter the username")
+
+if (user==""){
+    console.log("please enter a valid input");
+}
+else{
+    console.log("the username is "+user);
+}       
+
+//wapt calculate total amount for the used unit 
+
+let unit = Number(prompt("enter the used unit"))
+let totalamt = 0;
+
+if (unit > 0 && unit <= 100) {
+	totalamt = unit * 4;
+} else if (unit > 100 && unit <= 200) {
+	totalamt = 100 * 4 + (unit - 100) * 6;
+} else if (unit > 200 && unit <= 400) {
+	totalamt = 100 * 4 + 100 * 6 + (unit - 200) * 8;
+} else if (unit > 400) {
+	totalamt = 100 * 4 + 100 * 6 + 200 * 8 + (unit - 400) * 10;
+} else {
+	console.log("Please enter a valid unit.");
+}
+
+if (totalamt > 0) {
+    console.log("The total amount for " + unit + " units is: " + totalamt);
+}
+
+//wapt count the note when the user withdraw the amount from atm
+
+let note = Number(prompt("enter the number of notes :"))
+{
+if (note >= 2000) {
+    console.log("the number of 2000 notes is " + Math.floor(note / 2000));
+    note = note % 2000;
+}
+if (note >= 500) {
+    console.log("the number of 500 notes is " + Math.floor(note / 500));
+    note = note % 500;
+}
+if (note >= 200) {
+    console.log("the number of 200 notes is " + Math.floor(note / 200));
+    note = note % 200;
+}
+if (note >= 100) {
+    console.log("the number of 100 notes is " + Math.floor(note / 100));
+    note = note % 100;
+}
+if (note>=50){
+            console.log("the number of 50 notes is "+Math.floor(note/50));
+            note = note%50
+        }
+        if (note>=20){
+            console.log("the number of 20 notes is "+Math.floor(note/20));
+            note = note%20
+        }
+        if (note>=10){
+            console.log("the number of 10 notes is "+Math.floor(note/10));
+            note = note%10
+        }
+        if (note>=5){
+            console.log("the number of 5 notes is "+Math.floor(note/5));
+            note = note%5
+        }
+        if (note>=2){
+            console.log("the number of 2 notes is "+Math.floor(note/2));
+            note = note%2
+        }
+        if (note>=1){
+            console.log("the number of 1 notes is "+Math.floor(note/1));
+            note = note%1
+        }
+    // console.log("Please enter a valid number of notes.");    
+}
+
+//waptc the option of atm
+
+let bank = prompt("enter an option"); 
+let balance = 1000;
+
+if (bank === "balance") {
+    alert("The balance amount is " + balance);
+    console.log("The balance amount is " + balance);
+} else if (bank === "withdraw") {
+    let withdrawAmt = Number(prompt("enter the amount to withdraw"));
+    if (withdrawAmt > 0 && withdrawAmt <= balance) {
+        balance -= withdrawAmt;
+        console.log("The amount withdrawn is " + withdrawAmt);
+        alert("The amount withdrawn is " + withdrawAmt + ". New balance: " + balance);
+    } else {
+        alert("Invalid withdraw amount.");
+        console.log("Invalid withdraw amount.");
+    }
+} else if (bank === "deposit") {
+    let depositAmt = Number(prompt("Enter the amount to deposit:"));
+    if (depositAmt > 0) {
+        balance += depositAmt;
+        console.log("The amount deposited is " + depositAmt);
+        alert("The amount deposited is " + depositAmt + ". New balance: " + balance);
+    } else {
+        alert("Invalid deposit amount.");
+        console.log("Invalid deposit amount.");
+    }
+} else {
+    console.log("Please enter a proper option (balance, withdraw, deposit)");
+}
+
+console.log("welcome to ravi bank")
+let balance = 0;
+
+let again = true;
+while(condition){
+
+let option = prompt("1.balance 2.deposite 3.withdraw").toLowerCase();
+
+if(option == 1 || option === "b" || option === "balance"){
+console.log("you have selected balance \n your balance is", balance)
+}
+if(option == 2 || option === "d" || option === "deposit"){
+    let dep = Number(prompt("enter deposite amount :"))
+    if(isNaN(dep)){
+        alert("enter proper deposite amount")
+    }
+else{
+    balance+=dep
+    console.log("yout deposite amount is ",dep)
+    console.log("your outstanding balance  amt ===",balance)
+}
+
+}
+if(option == 3 || option === "w" || option === "withdraw"){
+
+    let w = prompt("enter withdraw amount")
+    if(isNaN(w)){
+        alert("enter withdraw amount")
+
+    }
+    else if(w> balance){
+alert("insufficient balance : ")
+
+    }
+    else{
+        console.log("your withdrawal amt is", w)
+        console.log("your balance ===",(balance <= 2))
+    }
+    console.log("please provide proper amt")
+}
+again = confirm("do you want to continue ?")
+}
+console.log("thanks for banking")
+
